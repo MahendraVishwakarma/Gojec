@@ -81,6 +81,16 @@ class ContactDetailsViewController: UIViewController {
     }
     
     @IBAction func deleteContact(_ sender: Any) {
-     deleteContact()
+        
+        let alert = UIAlertController(title: "😲 Contact Delete?", message: "are you sure want to delete this contact?", preferredStyle: .alert)
+        let ac1 = UIAlertAction(title: "Yes", style: .default) { (alt) in
+            self.deleteContact()
+        }
+        let ac2 = UIAlertAction(title: "No", style: .cancel) { (alt) in
+            
+        }
+        alert.addAction(ac1)
+        alert.addAction(ac2)
+        self.present(alert, animated: true, completion: nil)
     }
 }
