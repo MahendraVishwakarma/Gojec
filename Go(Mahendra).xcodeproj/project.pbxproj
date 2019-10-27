@@ -31,6 +31,7 @@
 		80966E5B2364804A008D28A7 /* CommonEXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80966E5A2364804A008D28A7 /* CommonEXT.swift */; };
 		80966E5D2364865B008D28A7 /* ContactDetailsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80966E5C2364865B008D28A7 /* ContactDetailsInfo.swift */; };
 		80966E5F2364A22D008D28A7 /* ContactDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80966E5E2364A22D008D28A7 /* ContactDetailViewModel.swift */; };
+		80FB00022365B5C600B11CF5 /* TPKeyboardAvoidingSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB00012365B5C600B11CF5 /* TPKeyboardAvoidingSwift.swift */; };
 		80FBFFF223656AB700B11CF5 /* EditAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBFFF123656AB700B11CF5 /* EditAddViewController.swift */; };
 		80FBFFF423656B1700B11CF5 /* EditAddViewControllerEXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBFFF323656B1700B11CF5 /* EditAddViewControllerEXT.swift */; };
 		80FBFFF6236583A800B11CF5 /* EditAddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBFFF5236583A800B11CF5 /* EditAddViewModel.swift */; };
@@ -67,6 +68,7 @@
 		80966E5A2364804A008D28A7 /* CommonEXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEXT.swift; sourceTree = "<group>"; };
 		80966E5C2364865B008D28A7 /* ContactDetailsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsInfo.swift; sourceTree = "<group>"; };
 		80966E5E2364A22D008D28A7 /* ContactDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewModel.swift; sourceTree = "<group>"; };
+		80FB00012365B5C600B11CF5 /* TPKeyboardAvoidingSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPKeyboardAvoidingSwift.swift; sourceTree = "<group>"; };
 		80FBFFF123656AB700B11CF5 /* EditAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddViewController.swift; sourceTree = "<group>"; };
 		80FBFFF323656B1700B11CF5 /* EditAddViewControllerEXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddViewControllerEXT.swift; sourceTree = "<group>"; };
 		80FBFFF5236583A800B11CF5 /* EditAddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddViewModel.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 		80966E34236424EC008D28A7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				80FB00012365B5C600B11CF5 /* TPKeyboardAvoidingSwift.swift */,
 				802D3E5F2364139B00CD0985 /* AppDelegate.swift */,
 				80966E4A23644DDC008D28A7 /* Messages.swift */,
 			);
@@ -395,6 +398,7 @@
 				80966E4B23644DDC008D28A7 /* Messages.swift in Sources */,
 				80966E5723647277008D28A7 /* ContactDetailsViewController.swift in Sources */,
 				80FBFFF823659C5100B11CF5 /* CharactersView.swift in Sources */,
+				80FB00022365B5C600B11CF5 /* TPKeyboardAvoidingSwift.swift in Sources */,
 				80FBFFFD23659F8300B11CF5 /* CharecterCell.swift in Sources */,
 				802D3E622364139B00CD0985 /* ContactsViewController.swift in Sources */,
 				80966E49236449AA008D28A7 /* Protocols.swift in Sources */,
