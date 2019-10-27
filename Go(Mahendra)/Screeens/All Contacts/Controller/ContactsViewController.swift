@@ -12,8 +12,10 @@ class ContactsViewController: UIViewController {
 
     var viewmodel:ContactViewModel?
     var contacts:Contacts!
+    
     @IBOutlet weak var tablwview: UITableView!
     @IBOutlet weak var activity: UIActivityIndicatorView!
+    var characters : CharactersView!
     override func viewDidLoad() {
         super.viewDidLoad()
         //initial setup called

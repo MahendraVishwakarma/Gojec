@@ -33,9 +33,15 @@ extension EditAddViewController:ServeResponse{
         switch result {
         case .success(let data):
             DispatchQueue.main.async {
+                
                 self.activity.stopAnimating()
-                self.defaultContact = data as? ContactDetailsInfo
-                self.setDefaultValues()
+                if(self.actionType == .add) {
+                    self.navigationController?.popViewController(animated: true)
+                }else{
+                    self.defaultContact = data as? ContactDetailsInfo
+                    self.setDefaultValues()
+                }
+                
             }
             
         case .failure(let err):

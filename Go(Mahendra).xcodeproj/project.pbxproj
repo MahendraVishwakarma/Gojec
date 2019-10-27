@@ -34,6 +34,10 @@
 		80FBFFF223656AB700B11CF5 /* EditAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBFFF123656AB700B11CF5 /* EditAddViewController.swift */; };
 		80FBFFF423656B1700B11CF5 /* EditAddViewControllerEXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBFFF323656B1700B11CF5 /* EditAddViewControllerEXT.swift */; };
 		80FBFFF6236583A800B11CF5 /* EditAddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBFFF5236583A800B11CF5 /* EditAddViewModel.swift */; };
+		80FBFFF823659C5100B11CF5 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBFFF723659C5100B11CF5 /* CharactersView.swift */; };
+		80FBFFFA23659C6800B11CF5 /* CharactersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80FBFFF923659C6800B11CF5 /* CharactersView.xib */; };
+		80FBFFFD23659F8300B11CF5 /* CharecterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBFFFB23659F8300B11CF5 /* CharecterCell.swift */; };
+		80FBFFFE23659F8300B11CF5 /* CharecterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80FBFFFC23659F8300B11CF5 /* CharecterCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +70,10 @@
 		80FBFFF123656AB700B11CF5 /* EditAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddViewController.swift; sourceTree = "<group>"; };
 		80FBFFF323656B1700B11CF5 /* EditAddViewControllerEXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddViewControllerEXT.swift; sourceTree = "<group>"; };
 		80FBFFF5236583A800B11CF5 /* EditAddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddViewModel.swift; sourceTree = "<group>"; };
+		80FBFFF723659C5100B11CF5 /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
+		80FBFFF923659C6800B11CF5 /* CharactersView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersView.xib; sourceTree = "<group>"; };
+		80FBFFFB23659F8300B11CF5 /* CharecterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharecterCell.swift; sourceTree = "<group>"; };
+		80FBFFFC23659F8300B11CF5 /* CharecterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharecterCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +302,10 @@
 			children = (
 				80966E5223645391008D28A7 /* ContactsCell.swift */,
 				80966E5323645391008D28A7 /* ContactsCell.xib */,
+				80FBFFF723659C5100B11CF5 /* CharactersView.swift */,
+				80FBFFF923659C6800B11CF5 /* CharactersView.xib */,
+				80FBFFFB23659F8300B11CF5 /* CharecterCell.swift */,
+				80FBFFFC23659F8300B11CF5 /* CharecterCell.xib */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -358,8 +370,10 @@
 			files = (
 				80966E5523645391008D28A7 /* ContactsCell.xib in Resources */,
 				80966E3C23642D97008D28A7 /* SF-Compact-Text-Semibold.otf in Resources */,
+				80FBFFFA23659C6800B11CF5 /* CharactersView.xib in Resources */,
 				80966E3923642CB0008D28A7 /* SF-UI-Text-Regular.otf in Resources */,
 				802D3E6A2364139C00CD0985 /* LaunchScreen.storyboard in Resources */,
+				80FBFFFE23659F8300B11CF5 /* CharecterCell.xib in Resources */,
 				80966E3A23642CB0008D28A7 /* SF-Compact-Text-Medium.otf in Resources */,
 				802D3E672364139C00CD0985 /* Assets.xcassets in Resources */,
 				80966E3823642CB0008D28A7 /* SF-UI-Display-Bold.otf in Resources */,
@@ -380,6 +394,8 @@
 				80966E5F2364A22D008D28A7 /* ContactDetailViewModel.swift in Sources */,
 				80966E4B23644DDC008D28A7 /* Messages.swift in Sources */,
 				80966E5723647277008D28A7 /* ContactDetailsViewController.swift in Sources */,
+				80FBFFF823659C5100B11CF5 /* CharactersView.swift in Sources */,
+				80FBFFFD23659F8300B11CF5 /* CharecterCell.swift in Sources */,
 				802D3E622364139B00CD0985 /* ContactsViewController.swift in Sources */,
 				80966E49236449AA008D28A7 /* Protocols.swift in Sources */,
 				80966E4423643B1F008D28A7 /* AppEnums.swift in Sources */,
