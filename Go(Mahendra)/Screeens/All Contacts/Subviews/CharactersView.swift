@@ -15,6 +15,7 @@ class CharactersView: UIView {
     @IBOutlet weak var tableview: UITableView!
     var charactrs:Array<String>!
     var selectedChar:Int = 0
+    weak var parentObject:ContactsViewController?
     override init(frame: CGRect) {
         super.init(frame: frame)
         initialization()
@@ -62,5 +63,11 @@ extension CharactersView:UITableViewDataSource{
         
         return cell
         
+    }
+}
+
+extension CharactersView:UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       parentObject?.scrollToIndex(char: charactrs[indexPath.row])
     }
 }

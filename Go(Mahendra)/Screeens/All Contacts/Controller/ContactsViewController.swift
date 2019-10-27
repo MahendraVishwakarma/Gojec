@@ -32,6 +32,7 @@ class ContactsViewController: UIViewController {
     deinit {
         viewmodel?.delegate = nil
         viewmodel = nil
+        characters = nil
     }
 
     @IBAction func addContact(_ sender: Any) {

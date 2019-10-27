@@ -38,6 +38,8 @@ class ContactDetailsViewController: UIViewController {
     deinit {
         viewmodel?.delegate = nil
         viewmodel = nil
+        contactDetails = nil
+        contact = nil
     }
     
     
@@ -58,7 +60,6 @@ class ContactDetailsViewController: UIViewController {
     }
     
     @IBAction func makeCall(_ sender: Any) {
-       
         if let url = URL(string: "tel://\((contactDetails.phoneNumber ?? ""))"),
             UIApplication.shared.canOpenURL(url) {
             if #available(iOS 10, *) {
@@ -86,9 +87,7 @@ class ContactDetailsViewController: UIViewController {
         let ac1 = UIAlertAction(title: "Yes", style: .default) { (alt) in
             self.deleteContact()
         }
-        let ac2 = UIAlertAction(title: "No", style: .cancel) { (alt) in
-            
-        }
+        let ac2 = UIAlertAction(title: "No", style: .destructive) { (alt) in}
         alert.addAction(ac1)
         alert.addAction(ac2)
         self.present(alert, animated: true, completion: nil)

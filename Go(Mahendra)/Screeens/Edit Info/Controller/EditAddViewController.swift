@@ -29,6 +29,11 @@ class EditAddViewController: UIViewController {
         
     }
     
+    deinit {
+        defaultContact = nil
+        viewmodel = nil
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
     }

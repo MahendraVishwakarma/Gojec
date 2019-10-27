@@ -17,6 +17,7 @@ extension ContactsViewController:ServeResponse{
         viewmodel?.delegate = self
         
         characters = CharactersView(frame: CGRect(x: self.view.frame.maxX-30, y: 100, width: 25, height: 0))
+        characters.parentObject = self
         self.view.addSubview(characters)
         // register cell on tableView
         tablwview.register(UINib(nibName: "ContactsCell", bundle: nil), forCellReuseIdentifier: "contactCell")
@@ -87,6 +88,17 @@ extension ContactsViewController:UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         updateIndex(index: indexPath.row)
+    }
+    
+    // scrollview to selected char
+    func scrollToIndex(char:String){
+        guard let index = contacts.firstIndex(where: {String(($0.firstName ?? "")[($0.firstName ?? "").index(($0.firstName ?? "").startIndex, offsetBy: 0)]).capitalized == char.capitalized}) else {
+            return
+        }
+        if(index < contacts.count){
+           tablwview.scrollToRow(at: IndexPath(row: index, section: 0), at: .middle, animated: true)
+        }
+      
     }
     
 }
