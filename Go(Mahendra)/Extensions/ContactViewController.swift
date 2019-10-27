@@ -15,9 +15,6 @@ extension ContactsViewController:ServeResponse{
         //initialize view model
         viewmodel = ContactViewModel()
         viewmodel?.delegate = self
-        self.navigationController?.isNavigationBarHidden = true
-        activity.startAnimating()
-        viewmodel?.fetchData(requestURL: HttpURL.Contact.url, httpMethod: .Get, decode: Contacts.self, param: nil)
         
         // register cell on tableView
         tablwview.register(UINib(nibName: "ContactsCell", bundle: nil), forCellReuseIdentifier: "contactCell")
@@ -61,6 +58,7 @@ extension ContactsViewController:UITableViewDelegate {
       guard let contatDetailObj = self.storyboard?.instantiateViewController(withIdentifier: "ContactDetailsViewController") as? ContactDetailsViewController else {
             return
         }
+        
         contatDetailObj.contact = contacts[indexPath.row]
         self.navigationController?.pushViewController(contatDetailObj, animated: true)
     }

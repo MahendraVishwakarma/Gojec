@@ -14,8 +14,8 @@ extension ContactDetailsViewController:ServeResponse{
     
     func initialSetup() {
         
-        self.navigationController?.isNavigationBarHidden = true
         
+        let gradientLayer = CAGradientLayer(point: .bottomTop)
         gradientLayer.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: gradientView.frame.height)
         gradientView.layer.addSublayer(gradientLayer)
         
@@ -24,12 +24,9 @@ extension ContactDetailsViewController:ServeResponse{
         profileImg.layer.borderColor = UIColor.white.cgColor
         profileImg.layer.borderWidth = 1.5
         
-        // initialize
+        // initialize view model
         viewmodel = ContactDetailViewDetail()
         viewmodel?.delegate = self
-        
-        activity.startAnimating()
-        viewmodel?.fetchData(requestURL: (contact?.url ?? ""), httpMethod: .Get, decode: ContactDetailsInfo.self, param: nil)
         
     }
     

@@ -31,6 +31,9 @@
 		80966E5B2364804A008D28A7 /* CommonEXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80966E5A2364804A008D28A7 /* CommonEXT.swift */; };
 		80966E5D2364865B008D28A7 /* ContactDetailsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80966E5C2364865B008D28A7 /* ContactDetailsInfo.swift */; };
 		80966E5F2364A22D008D28A7 /* ContactDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80966E5E2364A22D008D28A7 /* ContactDetailViewModel.swift */; };
+		80FBFFF223656AB700B11CF5 /* EditAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBFFF123656AB700B11CF5 /* EditAddViewController.swift */; };
+		80FBFFF423656B1700B11CF5 /* EditAddViewControllerEXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBFFF323656B1700B11CF5 /* EditAddViewControllerEXT.swift */; };
+		80FBFFF6236583A800B11CF5 /* EditAddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBFFF5236583A800B11CF5 /* EditAddViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,9 @@
 		80966E5A2364804A008D28A7 /* CommonEXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEXT.swift; sourceTree = "<group>"; };
 		80966E5C2364865B008D28A7 /* ContactDetailsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsInfo.swift; sourceTree = "<group>"; };
 		80966E5E2364A22D008D28A7 /* ContactDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewModel.swift; sourceTree = "<group>"; };
+		80FBFFF123656AB700B11CF5 /* EditAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddViewController.swift; sourceTree = "<group>"; };
+		80FBFFF323656B1700B11CF5 /* EditAddViewControllerEXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddViewControllerEXT.swift; sourceTree = "<group>"; };
+		80FBFFF5236583A800B11CF5 /* EditAddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +224,7 @@
 		80966E31236424B7008D28A7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				80FBFFF123656AB700B11CF5 /* EditAddViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,6 +232,7 @@
 		80966E32236424C2008D28A7 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				80FBFFF5236583A800B11CF5 /* EditAddViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -276,6 +284,7 @@
 				80966E4F23644FF7008D28A7 /* ContactViewController.swift */,
 				80966E5823647F98008D28A7 /* ContactDetailsViewController_EXT.swift */,
 				80966E5A2364804A008D28A7 /* CommonEXT.swift */,
+				80FBFFF323656B1700B11CF5 /* EditAddViewControllerEXT.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -365,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80FBFFF423656B1700B11CF5 /* EditAddViewControllerEXT.swift in Sources */,
 				80966E46236444C9008D28A7 /* Contact.swift in Sources */,
 				80966E5D2364865B008D28A7 /* ContactDetailsInfo.swift in Sources */,
 				80966E5F2364A22D008D28A7 /* ContactDetailViewModel.swift in Sources */,
@@ -378,9 +388,11 @@
 				80966E4023643AC4008D28A7 /* WebServices.swift in Sources */,
 				80966E4D23644E83008D28A7 /* ContactViewModel.swift in Sources */,
 				80966E5B2364804A008D28A7 /* CommonEXT.swift in Sources */,
+				80FBFFF6236583A800B11CF5 /* EditAddViewModel.swift in Sources */,
 				80966E4123643AC4008D28A7 /* URLRequest.swift in Sources */,
 				80966E5423645391008D28A7 /* ContactsCell.swift in Sources */,
 				80966E5023644FF7008D28A7 /* ContactViewController.swift in Sources */,
+				80FBFFF223656AB700B11CF5 /* EditAddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

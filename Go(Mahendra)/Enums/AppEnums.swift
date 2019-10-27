@@ -45,4 +45,9 @@ enum HttpURL {
     }
 }
 
+enum ContactAction {
+    case edit
+    case add
+}
+
 

@@ -16,12 +16,15 @@ class ContactsViewController: UIViewController {
     @IBOutlet weak var activity: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //initial setup called
+        initialSetup()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        //initial setup called
-        initialSetup()
+        
+        self.navigationController?.isNavigationBarHidden = true
+        activity.startAnimating()
+        viewmodel?.fetchData(requestURL: HttpURL.Contact.url, httpMethod: .Get, decode: Contacts.self, param: nil)
     }
     
     deinit {
@@ -29,6 +32,13 @@ class ContactsViewController: UIViewController {
         viewmodel = nil
     }
 
-
+    @IBAction func addContact(_ sender: Any) {
+        guard let editContact = self.storyboard?.instantiateViewController(withIdentifier: "EditAddViewController") as? EditAddViewController else {
+            return
+        }
+        editContact.actionType = .add
+        self.navigationController?.pushViewController(editContact, animated: true)
+    }
+    
 }
 

@@ -13,7 +13,6 @@ class ContactDetailsViewController: UIViewController {
     @IBOutlet weak var gradientView: UIView!
     @IBOutlet weak var profileImg: UIImageView!
     @IBOutlet weak var userName: UILabel!
-    let gradientLayer = CAGradientLayer(point: .bottomTop)
     var viewmodel:ContactDetailViewDetail?
     var contactDetails:ContactDetailsInfo!
     var contact:Contact?
@@ -29,20 +28,29 @@ class ContactDetailsViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        activity.startAnimating()
+        viewmodel?.fetchData(requestURL: (contact?.url ?? ""), httpMethod: .Get, decode: ContactDetailsInfo.self, param: nil)
+        self.navigationController?.isNavigationBarHidden = true
+        
+    }
+    
     deinit {
         viewmodel?.delegate = nil
         viewmodel = nil
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-     
-    }
     
     @IBAction func btnBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func btnedit(_ sender: Any) {
-        
+       guard let editContact = self.storyboard?.instantiateViewController(withIdentifier: "EditAddViewController") as? EditAddViewController else {
+            return
+        }
+        editContact.actionType = .edit
+        editContact.defaultContact = contactDetails
+        self.navigationController?.pushViewController(editContact, animated: true)
     }
     
     @IBAction func sendMessage(_ sender: Any) {
