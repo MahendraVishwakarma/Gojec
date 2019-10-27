@@ -56,10 +56,10 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fr2-Si-Nck">
-                                        <rect key="frame" x="373" y="9.5" width="25" height="25"/>
+                                        <rect key="frame" x="368" y="7" width="30" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="Bge-Mr-PaN"/>
-                                            <constraint firstAttribute="width" constant="25" id="xHg-Z3-Epb"/>
+                                            <constraint firstAttribute="height" constant="30" id="Bge-Mr-PaN"/>
+                                            <constraint firstAttribute="width" constant="30" id="xHg-Z3-Epb"/>
                                         </constraints>
                                         <color key="tintColor" red="0.0" green="0.91764705879999997" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="addContact"/>
@@ -205,7 +205,7 @@
                                             <constraint firstAttribute="width" constant="150" id="w2t-pG-Jlp"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tui-z5-cu8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tui-z5-cu8">
                                         <rect key="frame" x="16" y="198" width="382" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="fWO-j4-78F"/>
